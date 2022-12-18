@@ -1,5 +1,4 @@
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
 import DataBlog from "../../src/database/datablog.json";
 
 const Blog = () => {
@@ -42,8 +41,8 @@ const Blog = () => {
                       target="_blank"
                       rel="noreferrer noopener"
                     >
-                      <p className="mt-2 flex w-max items-center gap-1  bg-gradient-to-r from-cyan-500 to-blue-500 px-2 text-xs md:text-xl  leading-none text-white py-2 rounded-3xl">
-                        Read more <BsArrowRight fontWeight={600} />
+                      <p className="mt-2 w-max   rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-500 px-2 py-2  text-xs leading-none text-white md:text-xl">
+                        Read more
                       </p>
                     </a>
                   </div>

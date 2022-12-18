@@ -47,7 +47,7 @@ const Skills = () => {
     <section
       id="skills"
       className="flex justify-evenly py-10"
-      data-aos="fade-left"
+      data-aos="zoom-in"
     >
       <div className="mt-8 text-center text-gray-100">
         <h3 className="text-2xl font-semibold md:text-4xl">
