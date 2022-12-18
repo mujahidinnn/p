@@ -92,14 +92,14 @@ const Navbar = () => {
                 <img
                   src={avatar}
                   alt=""
-                  className="w-32 rounded-full border border-white/10 brightness-75"
+                  className="w-32 rounded-full border border-white/10 brightness-50"
                   onClick={() => setChange(!change)}
                 />
               ) : (
                 <img
                   src={hero}
                   alt=""
-                  className="w-32 rounded-full border border-white/10 brightness-75"
+                  className="w-32 rounded-full border border-white/10 brightness-50"
                   onClick={() => setChange(!change)}
                 />
               )}

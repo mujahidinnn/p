@@ -8,31 +8,38 @@ const Skills = () => {
   const skills = [
     {
       logo: <IoLogoJavascript />,
-      color: "-yellow-400",
+      border: "border-yellow-400",
+      color: "text-yellow-400",
     },
     {
       logo: <FaGitAlt />,
-      color: "-orange-600",
+      border: "border-orange-600",
+      color: "text-orange-600",
     },
     {
       logo: <IoLogoReact />,
-      color: "-cyan-600",
+      border: "border-cyan-600",
+      color: "text-cyan-600",
     },
     {
       logo: <SiNextdotjs />,
-      color: "-white",
+      border: "border-white",
+      color: "text-white",
     },
     {
       logo: <IoLogoSass />,
-      color: "-pink-600",
+      border: "border-pink-600",
+      color: "text-pink-600",
     },
     {
       logo: <FaBootstrap />,
-      color: "-purple-600",
+      border: "border-purple-600",
+      color: "text-purple-600",
     },
     {
       logo: <SiTailwindcss />,
-      color: "-blue-400",
+      border: "border-blue-400",
+      color: "text-blue-400",
     },
   ];
   return (
@@ -53,10 +60,10 @@ const Skills = () => {
           {skills?.map((skill, i) => (
             <div
               key={i}
-              className={`group relative min-w-[2rem] max-w-[6rem] transform rounded-xl border-2 bg-gray-900 p-9 transition duration-500 hover:scale-110 md:p-10 border${skill.color}`}
+              className={`group relative min-w-[2rem] max-w-[6rem] transform rounded-xl border-2 bg-gray-900 p-9 transition duration-500 hover:scale-110 md:p-10 ${skill.border}`}
             >
               <div
-                className={`flex h-1 w-1 items-center justify-center rounded-full bg-gray-900 text-9xl text${skill.color}`}
+                className={`flex h-1 w-1 items-center justify-center rounded-full bg-gray-900 text-9xl ${skill.color}`}
               >
                 <p className="text-4xl md:text-5xl">{skill.logo}</p>
               </div>
