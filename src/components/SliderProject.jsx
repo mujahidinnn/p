@@ -12,7 +12,7 @@ const SliderProject = () => {
     <section
       id="projects"
       className="mb-20 py-10 text-white"
-      data-aos="zoom-out"
+      data-aos="zoom-in"
     >
       <div className="text-center">
         <h3 className="text-2xl font-semibold md:text-4xl">
