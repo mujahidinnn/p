@@ -31,7 +31,7 @@ const Blog = () => {
                   data-aos="flip-down"
                 >
                   <div className="mb-8">
-                    <div className="mb-2 text-[14px] font-semibold text-gray-900 md:text-xl">
+                    <div className="mb-2 text-[18px] font-semibold text-cyan-600 md:text-xl">
                       {data.name}
                     </div>
                     <p className="text-xs leading-3 text-gray-500 lg:text-base">
@@ -42,7 +42,7 @@ const Blog = () => {
                       target="_blank"
                       rel="noreferrer noopener"
                     >
-                      <p className="mt-2 flex w-max items-center gap-1  px-1 text-[10px] leading-none text-gray-700 lg:text-sm">
+                      <p className="mt-2 flex w-max items-center gap-1  bg-gradient-to-r from-cyan-500 to-blue-500 px-2 text-xs md:text-xl  leading-none text-white py-2 rounded-3xl">
                         Read more <BsArrowRight fontWeight={600} />
                       </p>
                     </a>
