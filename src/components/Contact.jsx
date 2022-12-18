@@ -24,7 +24,7 @@ const Contact = () => {
     <section id="contact" className="min-h-screen py-10 text-white">
       <div className="mt-8 text-center">
         <div className="h-1 w-[60%] bg-gradient-to-r from-cyan-500 to-blue-500 " />
-        <h3 className="text-xl font-semibold md:text-5xl mt-4">
+        <h3 className="mt-4 text-xl font-semibold md:text-5xl">
           Contact{" "}
           <span className="bg-gradient-to-r  from-cyan-500 to-blue-500 bg-clip-text text-transparent">
             Me
@@ -35,11 +35,24 @@ const Contact = () => {
         <div
           className="mx-auto mt-16 flex max-w-5xl
          flex-col gap-6 rounded-lg bg-gray-800 p-2 md:flex-row md:p-6"
+          data-aos="zoom-in-down"
         >
           <form className="flex flex-1 flex-col gap-5">
-            <input type="text" placeholder="Your Name" />
-            <input type="Email" placeholder="Your Email Address" />
-            <textarea placeholder="Your Message" rows={10}></textarea>
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="text-sm md:text-base"
+            />
+            <input
+              type="Email"
+              placeholder="Your Email Address"
+              className="text-sm md:text-base"
+            />
+            <textarea
+              placeholder="Your Message"
+              rows={10}
+              className="text-sm md:text-base"
+            ></textarea>
             <button className="btn-primary w-fit bg-gradient-to-r from-cyan-500 to-blue-500">
               Send Message
             </button>
@@ -62,7 +75,7 @@ const Contact = () => {
                     </a>
                   </span>
                 </div>
-                <p className="break-words text-sm  md:text-base text-white/60">
+                <p className="break-words text-sm  text-white/60 md:text-base">
                   {contact.text}
                 </p>
               </div>

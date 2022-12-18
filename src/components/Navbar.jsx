@@ -32,7 +32,7 @@ const Navbar = () => {
         }`}
       >
         <div className="mx-7">
-          <h4 className="text-4xl font-bold uppercase">
+          <h4 className="text-2xl md:text-4xl font-bold uppercase">
             <span className="bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent ">
               mujahidin
             </span>

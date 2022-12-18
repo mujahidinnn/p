@@ -52,6 +52,7 @@ const Project = () => {
           <div
             key={i}
             className="group relative min-w-[18rem] max-w-[30rem] rounded-xl border-2 border-cyan-600 bg-gray-900 p-5 md:p-10"
+            data-aos="flip-right"
           >
             <div className="flex h-[100%] w-[100%] items-center justify-center rounded-full bg-gray-900 text-9xl group-hover:text-cyan-600">
               <img src={project.img} alt="" className="rounded-lg" />

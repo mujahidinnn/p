@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import hero from "../assets/images/08c7e5d9-ad01-4194-a637-6e3c79a0e922.webp";
-import DownloadCV from "../assets/Mujahidin.pdf"
+import DownloadCV from "../assets/Mujahidin.pdf";
 import SliderProject from "./SliderProject";
 import Skills from "./Skills";
 //
 import { SiDribbble, SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
+import { RxDoubleArrowDown } from "react-icons/rx";
 
 const Hero = () => {
   const social_media = [
@@ -14,19 +15,24 @@ const Hero = () => {
     <SiLinkedin />,
     <SiDribbble />,
   ];
+
   return (
     <>
       <section
         id="home"
         className="flex min-h-screen flex-col items-center py-10 md:flex-row"
       >
-        <div className="flex h-full flex-1 flex-col items-center justify-center">
+        <div
+          className="flex h-full flex-1 flex-col items-center justify-center"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
           <img
             src={hero}
             alt=""
-            className="md:w-12/12 mt-[-50px] h-full object-cover md:mt-[-250px]"
+            className="w-12/12 md:12/8 mt-[-50px] h-[350px] object-cover md:mt-[-100px]"
           />
-          <div className="mt-8 flex items-center justify-center gap-5 pb-6 text-3xl md:justify-start">
+          <div className="mt-2 flex items-center justify-center gap-5 pb-6 text-xl md:mt-8 md:justify-start md:text-3xl">
             {social_media?.map((icon) => (
               <div
                 key={icon}
@@ -37,24 +43,24 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1" data-aos="fade-right" data-aos-delay="300">
           <div className="text-center md:text-left">
-            <h1 className="text-2xl font-bold leading-10 text-white md:text-5xl md:leading-normal">
-              <span className="bg-gradient-to-r  from-cyan-500 to-blue-500 bg-clip-text text-5xl font-extrabold  text-transparent md:text-6xl">
+            <h1 className="mt-[-34px] text-2xl font-bold leading-3 text-white md:mt-0 md:text-5xl md:leading-normal">
+              <span className="bg-gradient-to-r  from-cyan-500 to-blue-500 bg-clip-text text-4xl font-extrabold  text-transparent md:text-6xl">
                 Hi, there!
                 <br />
               </span>
             </h1>
 
             <div className="my-3 text-gray-300">
-              <p className="mx-auto w-11/12 text-justify text-sm leading-7 md:mx-0 md:text-lg">
+              <p className="mx-auto w-11/12 text-justify text-sm leading-5 md:mx-0 md:text-lg md:leading-7">
                 <p>
                   My name is{" "}
                   <span className="text-md font-bold">Mujahidin</span>, you can
                   call me whatever you like.
                 </p>
                 <p>
-                  I 'am a{" "}
+                  I'm a{" "}
                   <span className="text-md font-bold">
                     frontend web developer
                   </span>
@@ -63,24 +69,32 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="mx-6  flex gap-7 md:mx-auto">
+            <div className="mx-6  flex justify-center gap-7 md:mx-auto md:justify-start">
               <Link to="/contact">
-                <button className="mt-8 flex items-center justify-center rounded-full border border-transparent bg-gradient-to-r from-cyan-500 to-blue-500 py-3 px-3 ">
+                <button className="mt-8 flex items-center justify-center rounded-full border border-transparent bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-5 text-sm md:py-3 md:px-3 md:text-base ">
                   Contact Me
                 </button>
               </Link>
               <a
                 href={DownloadCV}
                 download
-                className="mt-8 rounded-full border  border-blue-900  px-8 flex items-center"
+                className="mt-8 flex items-center  rounded-full  border border-blue-900 px-6 text-sm md:text-base"
               >
                 <button>Download CV</button>
               </a>
             </div>
           </div>
+          <div
+            id="scrolls"
+            className="absolute ml-[-5px] hidden animate-bounce cursor-pointer md:bottom-[-16rem] md:block"
+          >
+            <a href="#skills">
+              <RxDoubleArrowDown size={18} />
+            </a>
+          </div>
         </div>
       </section>
-      <div className="mx-auto hidden items-center justify-center pb-28 lg:flex lg:flex-row">
+      <div className="mx-auto hidden justify-center pb-28 lg:flex lg:flex-row">
         <Skills />
         <SliderProject />
       </div>

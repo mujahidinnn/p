@@ -10,7 +10,7 @@ body {
   @apply box-border bg-gray-900 text-gray-100;
 }
 .btn-primary {
-  @apply mx-auto flex items-center gap-2 rounded-full bg-cyan-600 py-3 px-6 font-semibold text-white md:mx-0;
+  @apply mx-auto flex items-center gap-2 rounded-full bg-cyan-600 py-3 px-6 font-medium text-white md:mx-0;
 }
 
 .aboutImg::after {
@@ -18,7 +18,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-  @apply bg-white;
+  @apply bg-white/50;
 }
 
 input,
@@ -26,10 +26,11 @@ textarea {
   @apply rounded-lg bg-gray-700 p-3 outline-none;
 }
 ::placeholder {
-  @apply text-lg;
+  @apply text-base;
 }
 
 ::selection {
   @apply bg-cyan-600;
+  @apply text-white;
 }
 

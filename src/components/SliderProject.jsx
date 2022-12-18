@@ -1,4 +1,5 @@
 import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
@@ -8,9 +9,13 @@ import Projects from "../database/dataproject.json";
 
 const SliderProject = () => {
   return (
-    <section id="projects" className="mb-20 py-10 text-white">
+    <section
+      id="projects"
+      className="mb-20 py-10 text-white"
+      data-aos="fade-down-right"
+    >
       <div className="text-center">
-        <h3 className="text-4xl font-semibold">
+        <h3 className="text-2xl font-semibold md:text-4xl">
           My{" "}
           <span className="bg-gradient-to-r  from-cyan-500 to-blue-500 bg-clip-text text-transparent">
             Projects
@@ -40,7 +45,7 @@ const SliderProject = () => {
           >
             {Projects.map((project, i) => (
               <SwiperSlide key={i}>
-                <div className="h-fit w-full rounded-xl bg-slate-700 p-4">
+                <div className="h-fit w-full rounded-xl bg-slate-800 p-4">
                   <img
                     src={project.img}
                     alt=""
@@ -54,8 +59,8 @@ const SliderProject = () => {
         </div>
       </div>
       <Link to="/project" className="m-auto flex w-max">
-        <button className="m-auto mt-8 flex rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 py-3 px-8 text-lg font-semibold">
-          More &rarr;
+        <button className="m-auto mt-8 flex items-center gap-1 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-8 text-lg font-semibold">
+          More <BsArrowRight fontWeight={600} />
         </button>
       </Link>
     </section>
