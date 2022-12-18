@@ -59,7 +59,7 @@ const SliderProject = () => {
         </div>
       </div>
       <Link to="/project" className="m-auto flex w-max">
-        <button className="m-auto mt-8 flex items-center gap-1 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-8 text-lg font-semibold">
+        <button className="m-auto mt-8 flex items-center gap-1 rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-8 text-lg font-semibold">
           More <BsArrowRight fontWeight={600} />
         </button>
       </Link>

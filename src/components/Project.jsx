@@ -57,7 +57,7 @@ const Project = () => {
             <div className="flex h-[100%] w-[100%] items-center justify-center rounded-full bg-gray-900 text-9xl group-hover:text-cyan-600">
               <img src={project.img} alt="" className="rounded-lg" />
             </div>
-            <h3 className="my-4 text-xl">{project.name}</h3>
+            <p className="mt-4 text-xl">{project.name}</p>
           </div>
         ))}
       </div>

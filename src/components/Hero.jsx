@@ -28,7 +28,8 @@ const Hero = () => {
         >
           <img
             src={hero}
-            alt=""
+            alt="mujahidin"
+            title="mujahidin"
             className="w-12/12 md:12/8 mt-[-50px] h-[350px] object-cover md:mt-[-100px]"
           />
           <div className="mt-2 flex items-center justify-center gap-5 pb-6 text-xl md:mt-8 md:justify-start md:text-3xl">
@@ -37,7 +38,7 @@ const Hero = () => {
                 key={icon}
                 className="cursor-pointer text-gray-600 hover:text-white "
               >
-                <span>{icon}</span>
+                <span title="">{icon}</span>
               </div>
             ))}
           </div>
@@ -63,7 +64,7 @@ const Hero = () => {
                   <span className="text-md font-bold">
                     frontend web developer
                   </span>
-                  , and familiar with react JS.
+                   &nbsp;and familiar with react JS.
                 </p>
               </p>
             </div>

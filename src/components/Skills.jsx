@@ -1,46 +1,38 @@
 import React from "react";
-import Project from "./SliderProject";
+import { FaBootstrap, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoReact, IoLogoSass } from "react-icons/io5";
-import { FaBootstrap, FaGitAlt } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
     {
       logo: <IoLogoJavascript />,
-      border: "border-yellow-400",
-      color: "text-yellow-400",
+      color: "-yellow-400",
     },
     {
       logo: <FaGitAlt />,
-      border: "border-orange-600",
-      color: "text-orange-600",
+      color: "-orange-600",
     },
     {
       logo: <IoLogoReact />,
-      border: "border-cyan-600",
-      color: "text-cyan-600",
+      color: "-cyan-600",
     },
     {
       logo: <SiNextdotjs />,
-      border: "border-white",
-      color: "text-white",
+      color: "-white",
     },
     {
       logo: <IoLogoSass />,
-      border: "border-pink-600",
-      color: "text-pink-600",
+      color: "-pink-600",
     },
     {
       logo: <FaBootstrap />,
-      border: "border-purple-600",
-      color: "text-purple-600",
+      color: "-purple-600",
     },
     {
       logo: <SiTailwindcss />,
-      border: "border-blue-400",
-      color: "text-blue-400",
+      color: "-blue-400",
     },
   ];
   return (
@@ -57,16 +49,16 @@ const Skills = () => {
           </span>
         </h3>
         <p className="mt-3 text-lg text-gray-400">My knowledge</p>
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-10 p-4">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-8 p-4 md:gap-10">
           {skills?.map((skill, i) => (
             <div
               key={i}
-              className={`group relative min-w-[3rem] max-w-[6rem] transform rounded-xl border-2 bg-gray-900 p-10 transition duration-500 hover:scale-110 ${skill.border}`}
+              className={`group relative min-w-[2rem] max-w-[6rem] transform rounded-xl border-2 bg-gray-900 p-9 transition duration-500 hover:scale-110 md:p-10 border${skill.color}`}
             >
               <div
-                className={`flex h-1 w-1 items-center justify-center rounded-full bg-gray-900 text-9xl ${skill.color}`}
+                className={`flex h-1 w-1 items-center justify-center rounded-full bg-gray-900 text-9xl text${skill.color}`}
               >
-                <p className="text-5xl">{skill.logo}</p>
+                <p className="text-4xl md:text-5xl">{skill.logo}</p>
               </div>
             </div>
           ))}

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import {SiMaildotru} from "react-icons/si"
 
 const Contact = () => {
   const contact_info = [
@@ -20,6 +22,29 @@ const Contact = () => {
       text: "62 859 250 006 62",
     },
   ];
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_ewyatnw",
+        "template_1ytbic5",
+        form.current,
+        "NlbR2hBkr47mAH7Xd"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Pesan telah dikirim");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <section id="contact" className="min-h-screen py-10 text-white">
       <div className="mt-8 text-center">
@@ -37,23 +62,36 @@ const Contact = () => {
          flex-col gap-6 rounded-lg bg-gray-800 p-2 md:flex-row md:p-6"
           data-aos="zoom-in-down"
         >
-          <form className="flex flex-1 flex-col gap-5">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-1 flex-col gap-5"
+          >
             <input
               type="text"
               placeholder="Your Name"
               className="text-sm md:text-base"
+              name="name"
+              required
             />
             <input
               type="Email"
               placeholder="Your Email Address"
               className="text-sm md:text-base"
+              name="email"
+              required
             />
             <textarea
               placeholder="Your Message"
               rows={10}
               className="text-sm md:text-base"
+              name="message"
+              required
             ></textarea>
-            <button className="btn-primary w-fit bg-gradient-to-r from-cyan-500 to-blue-500">
+            <button
+              type="submit"
+              className="btn-primary w-fit bg-gradient-to-r from-cyan-500 to-blue-500"
+            >
               Send Message
             </button>
           </form>
