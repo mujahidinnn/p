@@ -25,7 +25,6 @@ const Hero = () => {
         <div
           className="flex h-full flex-1 flex-col items-center justify-center"
           data-aos="fade-left"
-          data-aos-delay="300"
         >
           <img
             src={hero}
@@ -43,7 +42,7 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        <div className="flex-1" data-aos="fade-right" data-aos-delay="300">
+        <div className="flex-1" data-aos="fade-right">
           <div className="text-center md:text-left">
             <h1 className="mt-[-34px] text-2xl font-bold leading-3 text-white md:mt-0 md:text-5xl md:leading-normal">
               <span className="bg-gradient-to-r  from-cyan-500 to-blue-500 bg-clip-text text-4xl font-extrabold  text-transparent md:text-6xl">
