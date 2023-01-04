@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Project from "./components/Project";
+import Portfolio from "./components/Portfolio";
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/project" element={<Project/>} />
+          <Route path="/portfolio" element={<Portfolio/>} />
           <Route path="/blog" element={ <Blog/>} />
         </Routes>
 

@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-screen py-10 text-white">
       <div className="mt-8 text-center">
-        <div className="h-1 w-[60%] bg-gradient-to-r from-cyan-500 to-blue-500 " />
+        
         <h3 className="mt-4 text-xl font-semibold md:text-5xl">
           Contact{" "}
           <span className="bg-gradient-to-r  from-cyan-500 to-blue-500 bg-clip-text text-transparent">

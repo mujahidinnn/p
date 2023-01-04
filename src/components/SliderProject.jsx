@@ -5,7 +5,7 @@ import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Projects from "../database/dataproject.json";
+import data from "../database/dataPortfolio";
 
 const SliderProject = () => {
   return (
@@ -18,10 +18,10 @@ const SliderProject = () => {
         <h3 className="text-2xl font-semibold md:text-4xl">
           My{" "}
           <span className="bg-gradient-to-r  from-cyan-500 to-blue-500 bg-clip-text text-transparent">
-            Projects
+            Portfolio
           </span>
         </h3>
-        <p className="mt-3 text-lg text-gray-400">My awesome works</p>
+        <p className="mt-3 text-lg text-gray-400">My awesome apps</p>
       </div>
       <br />
       <div className="relative mx-auto flex max-w-6xl items-center gap-6 px-5">
@@ -43,7 +43,7 @@ const SliderProject = () => {
             }}
             modules={[Pagination, Autoplay]}
           >
-            {Projects.map((project, i) => (
+            {data.map((project, i) => (
               <SwiperSlide key={i}>
                 <div className="h-fit w-full rounded-xl bg-slate-800 p-4">
                   <img
@@ -59,7 +59,7 @@ const SliderProject = () => {
         </div>
       </div>
       <Link to="/project" className="m-auto flex w-max">
-        <button className="m-auto mt-8 flex items-center gap-1 rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-8 text-lg font-semibold">
+        <button className="m-auto mt-8 flex items-center gap-1 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-8 text-lg font-semibold">
           More <BsArrowRight fontWeight={600} />
         </button>
       </Link>

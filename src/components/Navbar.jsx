@@ -26,12 +26,14 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed left-0 top-0 z-[999] w-full ${
-        sticky ? "bg-gray-900/60  text-gray-900" : "text-white"
+        sticky
+          ? "bg-gradient-to-r from-gray-900/70 to-gray-900/90  text-gray-900"
+          : "text-white"
       }`}
     >
       <div
         className={`flex items-center justify-between ${
-          sticky ? "bg-gray-900 md:bg-white/0" : "bg-gray-900 "
+          sticky ? "bg-gray-900/80 md:bg-white/0" : "bg-gray-900"
         }`}
       >
         <div className="mx-7">
@@ -46,7 +48,8 @@ const Navbar = () => {
             sticky
               ? "bg-gradient-to-r from-cyan-400/75 to-blue-400/75"
               : "bg-cyan md:bg-white/0"
-          } hidden rounded-bl-[40px] px-7 py-1 font-medium text-gray-900  md:block `}
+          } hidden rounded-bl-[10px] py-1 pl-20 font-medium  text-gray-900 md:block`}
+          style={{ clipPath: "polygon(100% 100%, 10% 100%, 0% 0%, 100% 0%)" }}
         >
           <ul className="flex items-center gap-1 py-2 text-lg">
             <li className="px-6 text-gray-300 hover:text-white">
@@ -60,8 +63,8 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="px-6 text-gray-300 hover:text-white">
-              <NavLink to="/project" className={activeLink}>
-                Project
+              <NavLink to="/portfolio" className={activeLink}>
+                Portfolio
               </NavLink>
             </li>
             <li className="px-6 text-gray-300 hover:text-white">
@@ -130,10 +133,10 @@ const Navbar = () => {
               onClick={() => setOpen(false)}
               className=" border-b border-white/10 px-6 text-white/75 hover:text-white/90"
             >
-              <NavLink to="/project" className={activeLink}>
+              <NavLink to="/portfolio" className={activeLink}>
                 <span className="flex items-center gap-3">
                   <HiOutlineFolder />
-                  Project
+                  Portfolio
                 </span>
               </NavLink>
             </li>
