@@ -1,7 +1,12 @@
 import { FaBootstrap, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoReact, IoLogoSass } from "react-icons/io5";
-import { SiNextdotjs, SiTailwindcss, SiPhp } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMaterialui,
+  SiPhp,
+} from "react-icons/si";
 
 const Data = [
   {
@@ -25,8 +30,8 @@ const Data = [
   {
     name: "NextJS",
     logo: <SiNextdotjs />,
-    border: "border-white",
-    color: "text-white",
+    border: "border-gray-200",
+    color: "text-gray-200",
   },
   {
     name: "Sass",
@@ -45,6 +50,12 @@ const Data = [
     logo: <SiTailwindcss />,
     border: "border-blue-400",
     color: "text-blue-400",
+  },
+  {
+    name: "Material UI",
+    logo: <SiMaterialui />,
+    border: "border-blue-700",
+    color: "text-blue-700",
   },
   {
     name: "PHP",

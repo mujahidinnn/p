@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-import {SiMaildotru} from "react-icons/si"
+import { SiMaildotru } from "react-icons/si";
 
 const Contact = () => {
   const contact_info = [
@@ -48,7 +48,6 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-screen py-10 text-white">
       <div className="mt-8 text-center">
-        
         <h3 className="mt-4 text-xl font-semibold md:text-5xl">
           Contact{" "}
           <span className="bg-gradient-to-r  from-cyan-500 to-blue-500 bg-clip-text text-transparent">
@@ -58,8 +57,8 @@ const Contact = () => {
         <p className="mt-3 text-sm text-gray-400 md:text-lg">Get in touch</p>
 
         <div
-          className="mx-auto mt-16 flex max-w-5xl
-         flex-col gap-6 rounded-lg bg-gray-800 p-2 md:flex-row md:p-6"
+          className="mx-2 mt-16 flex max-w-5xl flex-col
+         gap-6 rounded-lg bg-[#051D2C]/60 p-2 md:mx-auto md:flex-row md:p-6"
           data-aos="zoom-in-down"
         >
           <form
@@ -90,7 +89,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="btn-primary w-fit bg-gradient-to-r from-cyan-500 to-blue-500"
+              className="rounded-xl py-2 px-3 w-fit bg-gradient-to-r from-cyan-500 to-blue-500"
             >
               Send Message
             </button>

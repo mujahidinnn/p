@@ -45,23 +45,25 @@ const SliderProject = () => {
           >
             {data.map((project, i) => (
               <SwiperSlide key={i}>
-                <div className="h-fit w-full rounded-xl bg-slate-800 p-4">
+                <div className="h-fit w-full rounded-md bg-[#051D2C] p-4">
                   <img
                     src={project.img}
                     alt=""
-                    className="h-[250px] w-full rounded-lg"
+                    className="h-[250px] w-full rounded"
                   />
-                  <h3 className="my-4 text-xl">{project.name}</h3>
+                  <h3 className="mb-3 text-lg">{project.name}</h3>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
-      <Link to="/project" className="m-auto flex w-max">
-        <button className="m-auto mt-8 flex items-center gap-1 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-8 text-lg font-semibold">
-          More <BsArrowRight fontWeight={600} />
-        </button>
+      <Link to="/portfolio" className="m-auto flex w-max">
+        <a href="#portfolio">
+          <button className="m-auto mt-8 flex items-center gap-1 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-8 text-lg font-semibold">
+            More <BsArrowRight fontWeight={600} />
+          </button>
+        </a>
       </Link>
     </section>
   );

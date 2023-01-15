@@ -27,13 +27,13 @@ const Navbar = () => {
     <nav
       className={`fixed left-0 top-0 z-[999] w-full ${
         sticky
-          ? "bg-gradient-to-r from-gray-900/70 to-gray-900/90  text-gray-900"
+          ? "bg-gradient-to-r from-[#011522]/70 to-[#011522]/90  text-[#011522]"
           : "text-white"
       }`}
     >
       <div
         className={`flex items-center justify-between ${
-          sticky ? "bg-gray-900/80 md:bg-white/0" : "bg-gray-900"
+          sticky ? "bg-[#011522]/80 md:bg-white/0" : "bg-[#011522]"
         }`}
       >
         <div className="mx-7">
@@ -48,7 +48,7 @@ const Navbar = () => {
             sticky
               ? "bg-gradient-to-r from-cyan-400/75 to-blue-400/75"
               : "bg-cyan md:bg-white/0"
-          } hidden rounded-bl-[10px] py-1 pl-20 font-medium  text-gray-900 md:block`}
+          } hidden rounded-bl-[10px] py-1 pl-20 font-medium  text-[#011522] md:block`}
           style={{ clipPath: "polygon(100% 100%, 10% 100%, 0% 0%, 100% 0%)" }}
         >
           <ul className="flex items-center gap-1 py-2 text-lg">
@@ -84,8 +84,8 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`absolute top-0 h-screen w-3/4  bg-gray-900
-          px-7 py-2 font-medium text-gray-900 duration-300 md:hidden ${
+          className={`absolute top-0 h-screen w-3/4  bg-[#011522]
+          px-7 py-2 font-medium text-[#011522] duration-300 md:hidden ${
             open ? "right-0" : "right-[-100%]"
           }`}
         >

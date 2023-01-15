@@ -1,59 +1,28 @@
 const data = [
   {
-    id: 1,
-    name: "Ujang",
-    desc: " Lorem ipsum dolor. Velit, nisi possimus? Quaerat eaquecupiditate sunt, sed cumque placeat vel quae. ",
-    image:
-      "https://images.unsplash.com/photo-1664575197229-3bbebc281874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    link: "https://youtube.com",
+    name: "Fundamental React Js",
+    desc: "What is ReactJs? React is a JavaScript library for building user interfaces created by Facebook in 2013. React is not a framework for creating UIs but a library for build a UI on the website...",
+    image: "https://miro.medium.com/max/720/0*VjSPn5B6XlQydYAC",
+    link: "https://medium.com/@mujahidin28394/fundamental-react-js-for-beginner-f6c58c4f9342",
   },
   {
-    id: 2,
-    name: "Oleng",
-    desc: "Lorem ipsum dolor. Velit, nisi possimus? Quaerat eaque cupiditate sunt, sed cumque placeat vel quae.",
-    image:
-      "https://images.unsplash.com/photo-1661961110671-77b71b929d52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    link: "https://youtube.com",
+    name: "Props vs State",
+    desc: "State dan props pada ReactJS tidak seperti Lib/framework lainnya, ReactJS datang dengan sesuatu yang unik tidak seperti bahasa pemrograman/framework lain...",
+    image: "https://miro.medium.com/max/4800/1*gCfSTMaxWyM_uiej4QGKeg.webp",
+    link: "https://medium.com/@mujahidin28394/props-dan-state-9bb50b9bccf0",
   },
   {
-    id: 3,
-    name: "Oleng",
-    desc: "Lorem ipsum dolor. Velit, nisi possimus? Quaerat eaque cupiditate sunt, sed cumque placeat vel quae.",
-    image:
-      "https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    link: "https://youtube.com",
+    name: "Sekilas ReactJS",
+    desc: "Class component dan Functional component sama-sama memiliki fungsi untuk membuat component pada ReactJS. Namun ,ada perbedaan antara...",
+    image: "https://miro.medium.com/max/720/0*plrOWRUeTRTH9Dnc.webp",
+    link: "https://medium.com/@mujahidin28394/%EF%BD%81%EF%BD%92%EF%BD%94%EF%BD%89%EF%BD%8B%EF%BD%85%EF%BD%8C-%EF%BD%81%EF%BD%8E%EF%BD%81%EF%BD%8C%EF%BD%89%EF%BD%93%EF%BD%81-7ab7a468cb30",
   },
   {
-    id: 4,
-    name: "Oleng",
-    desc: "Lorem ipsum dolor. Velit, nisi possimus? Quaerat eaque cupiditate sunt, sed cumque placeat vel quae.",
-    image:
-      "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    link: "https://youtube.com",
+    name: "Git",
+    desc: "Git is one of the tools that is often used in software development projects. Git is even a tool that programmers must understand because it is widely used everywhere.",
+    image: "https://miro.medium.com/max/720/0*GW_iSRKH8iD61JT0",
+    link: "https://medium.com/@mujahidin28394/git-4f3cf5503c67",
   },
-  {
-    id: 5,
-    name: "Oleng",
-    desc: "Lorem ipsum dolor. Velit, nisi possimus? Quaerat eaque cupiditate sunt, sed cumque placeat vel quae.",
-    image:
-      "https://images.unsplash.com/photo-1661956602944-249bcd04b63f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1MHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    link: "https://youtube.com",
-  },
-  {
-    id: 3,
-    name: "Oleng",
-    desc: "Lorem ipsum dolor. Velit, nisi possimus? Quaerat eaque cupiditate sunt, sed cumque placeat vel quae.",
-    image:
-      "https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    link: "https://youtube.com",
-  },
-  {
-    id: 4,
-    name: "Oleng",
-    desc: "Lorem ipsum dolor. Velit, nisi possimus? Quaerat eaque cupiditate sunt, sed cumque placeat vel quae.",
-    image:
-      "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    link: "https://youtube.com",
-  },
+  ,
 ];
-export default data
+export default data;

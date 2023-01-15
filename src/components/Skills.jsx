@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../database/dataTechTool";
+import data from "../database/dataSkill";
 
 const Skills = () => {
   return (
@@ -12,7 +12,7 @@ const Skills = () => {
         <h3 className="text-2xl font-semibold md:text-4xl">
           My{" "}
           <span className="bg-gradient-to-r  from-cyan-500 to-blue-500 bg-clip-text text-transparent">
-            Tech & Tool
+            Skills
           </span>
         </h3>
         <p className="mt-3 text-lg text-gray-400">My knowledge</p>
@@ -20,7 +20,7 @@ const Skills = () => {
           {data?.map((skill, i) => (
             <div
               key={i}
-              className={`group relative min-w-[2rem] max-w-[6rem] transform rounded-xl border-2 bg-gray-900 p-9 transition duration-500 hover:scale-110 md:p-10 ${skill.border}`}
+              className={`group relative min-w-[2rem] max-w-[6rem] transform rounded-xl border-2 bg-gray-900 p-10 transition duration-500 hover:scale-110 md:p-12 ${skill.border}`}
             >
               <div
                 className={`flex h-1 w-1 flex-col items-center justify-center rounded-full bg-gray-900 text-9xl ${skill.color}`}
