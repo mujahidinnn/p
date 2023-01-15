@@ -51,7 +51,7 @@ const SliderProject = () => {
                     alt=""
                     className="h-[200px] w-[600px] rounded"
                   />
-                  <h3 className="mb-3 text-lg">{project.name}</h3>
+                  <h3 className="mb-3 text-lg text-white/80">{project.name}</h3>
                 </div>
               </SwiperSlide>
             ))}
@@ -60,7 +60,7 @@ const SliderProject = () => {
       </div>
       <Link to="/portfolio" className="m-auto flex w-max">
         <a href="#portfolio">
-          <button className="m-auto mt-8 flex items-center gap-1 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-8 text-lg font-semibold">
+          <button className="text-white/90 m-auto mt-8 flex items-center gap-1 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-8 text-lg font-semibold">
             More <BsArrowRight fontWeight={600} />
           </button>
         </a>

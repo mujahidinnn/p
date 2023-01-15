@@ -64,21 +64,21 @@ const Hero = () => {
                   <span className="text-md font-bold">
                     frontend web developer
                   </span>
-                   &nbsp;and familiar with react JS.
+                  &nbsp;and familiar with react JS.
                 </p>
               </p>
             </div>
 
             <div className="mx-6  flex justify-center gap-7 md:mx-auto md:justify-start">
               <Link to="/contact">
-                <button className="mt-8 flex items-center justify-center rounded-xl border border-transparent bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-5 text-sm md:py-3 md:px-3 md:text-base ">
+                <div className="mt-8 flex items-center justify-center rounded-xl border border-transparent bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-5 text-sm text-white/90 md:py-3 md:px-3 md:text-base ">
                   Contact Me
-                </button>
+                </div>
               </Link>
               <a
                 href={DownloadCV}
                 download
-                className="mt-8 flex items-center  rounded-xl  border border-blue-900 px-6 text-sm md:text-base"
+                className="mt-8 flex items-center rounded-xl border border-cyan-600 px-6 text-sm text-white/90  md:text-base"
               >
                 <button>Download CV</button>
               </a>

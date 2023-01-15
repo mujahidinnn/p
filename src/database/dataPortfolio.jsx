@@ -54,7 +54,7 @@ const data = [
   {
     img: SimpleAuth,
     name: "Simple Authentication",
-    desc: "simple application with localstorage",
+    desc: "Simple application with localstorage",
     link: "https://logreg.vercel.app/",
     github: "https://github.com/mujahidinnn/login-app",
   },

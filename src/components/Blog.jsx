@@ -40,7 +40,7 @@ const Blog = () => {
                       href={data.link}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="mt-5 rounded bg-gradient-to-r from-cyan-500 to-blue-500 px-2 text-sm"
+                      className="mt-5 rounded bg-gradient-to-r from-cyan-500 to-blue-500 px-2 text-sm text-white/80"
                     >
                       Read more
                     </a>
