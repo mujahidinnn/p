@@ -16,7 +16,7 @@ const Project = () => {
         <p className="mt-3 text-sm text-gray-400 md:text-lg">My awesome apps</p>
         <br />
       </div>
-      <div className=" grid place-items-center items-center gap-10 sm:grid-cols-1 md:grid-cols-2 md:p-10 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="px-5 grid place-items-center items-center gap-10 sm:grid-cols-1 md:grid-cols-2 md:p-10 lg:grid-cols-3 xl:grid-cols-4">
         {data?.map((project, i) => (
           <div
             key={i}

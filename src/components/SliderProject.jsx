@@ -24,7 +24,7 @@ const SliderProject = () => {
         <p className="mt-3 text-lg text-gray-400">My awesome apps</p>
       </div>
       <br />
-      <div className="relative mx-auto flex max-w-6xl items-center gap-6 px-5">
+      <div className="relative mx-auto flex max-w-6xl items-center gap-6 px-3">
         <div className="w-full lg:w-4/5">
           <Swiper
             slidesPerview={1.2}
@@ -49,7 +49,7 @@ const SliderProject = () => {
                   <img
                     src={project.img}
                     alt=""
-                    className="h-[250px] w-full rounded"
+                    className="h-[200px] w-[600px] rounded"
                   />
                   <h3 className="mb-3 text-lg">{project.name}</h3>
                 </div>
