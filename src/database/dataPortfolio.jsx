@@ -2,7 +2,7 @@ import DarussalamTurgo from "../assets/images/darussalamturgo.png";
 import MuhammadiyahExpo from "../assets/images/muhammadiyahexpo.jpg";
 import LibraryApp from "../assets/images/e-library.png";
 import GithubSearcher from "../assets/images/githubsearcher.png";
-// import AuthenticationJWT from "";
+import AuthenticationJWT from "../assets/images/auth-jwt.png";
 import SimpleAuth from "../assets/images/simpleauth.jpg";
 import QuranApp from "../assets/images/quranku.png";
 import TodolistLS from "../assets/images/todolist-localstorage.png";
@@ -44,13 +44,13 @@ const data = [
     link: "https://tdls.netlify.app",
     github: "https://github.com/mujahidinnn/todolist-localstorage",
   },
-  // {
-  // img: "",
-  // name: "Authentication JWT",
-  // desc: "Authentication app with json web token(JWT)",
-  // link: "",
-  // github: "",
-  // },
+  {
+    img: AuthenticationJWT,
+    name: "Authentication JWT",
+    desc: "Authentication app with json web token(JWT)",
+    link: "https://authjwt.netlify.app/",
+    github: "https://github.com/mujahidinnn/authentication-jwt",
+  },
   {
     img: SimpleAuth,
     name: "Simple Authentication",
