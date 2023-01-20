@@ -23,6 +23,11 @@ const data = [
     image: "https://miro.medium.com/max/720/0*GW_iSRKH8iD61JT0",
     link: "https://medium.com/@mujahidin28394/git-4f3cf5503c67",
   },
-  ,
+  {
+    name: "How to install and configure tailwind in react js?",
+    desc: "Tailwind is a lightweight yet highly customizable CSS framework. Provides a new experience in building UI by presenting all the blocks needed in styling a website.",
+    image: "https://miro.medium.com/max/4800/1*9gX0BSMEBh3YYjTmQR1G3g.webp",
+    link: "https://medium.com/@mujahidin28394/how-to-install-and-configure-tailwind-in-react-js-b8bd8779fcd5",
+  },
 ];
 export default data;
