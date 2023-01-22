@@ -1,19 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import hero from "../assets/images/08c7e5d9-ad01-4194-a637-6e3c79a0e922.webp";
-import DownloadCV from "../assets/Mujahidin.pdf";
-import SliderProject from "./SliderProject";
 import Skills from "./Skills";
+import SliderProject from "./SliderProject";
 //
-import { SiDribbble, SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
 import { RxDoubleArrowDown } from "react-icons/rx";
+import { SiDribbble, SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
 
 const Hero = () => {
   const social_media = [
-    <SiInstagram />,
-    <SiGithub />,
-    <SiLinkedin />,
-    <SiDribbble />,
+    {
+      icon: <SiInstagram />,
+      link: "https://www.instagram.com/mujahidin1802/?hl=id",
+    },
+    {
+      icon: <SiGithub />,
+      link: "https://github.com/mujahidinnn",
+    },
+    {
+      icon: <SiLinkedin />,
+      link: "https://www.linkedin.com/in/mujahidin-8a5296242/",
+    },
+    {
+      icon: <SiDribbble />,
+      link: "https://dribbble.com/mujahidin1802",
+    },
   ];
 
   return (
@@ -33,12 +44,16 @@ const Hero = () => {
             className="w-12/12 md:12/8 mt-[-50px] h-[350px] object-cover md:mt-[-100px]"
           />
           <div className="mt-2 flex items-center justify-center gap-5 pb-6 text-xl md:mt-8 md:justify-start md:text-3xl">
-            {social_media?.map((icon) => (
-              <div
-                key={icon}
-                className="cursor-pointer text-gray-600 hover:text-white "
-              >
-                <span title="">{icon}</span>
+            {social_media?.map((item, id) => (
+              <div key={id}>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer text-gray-600 hover:text-white"
+                >
+                  {item.icon}
+                </a>
               </div>
             ))}
           </div>
@@ -76,7 +91,7 @@ const Hero = () => {
                 </div>
               </Link>
               <a
-                href={DownloadCV}
+                href="https://www.canva.com/design/DAFX1V5VT_0/MHEZoNPdG-Drs8fCJYAqkQ/view?utm_content=DAFX1V5VT_0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
                 download
                 className="mt-8 flex items-center rounded-xl border border-cyan-600 px-6 text-sm text-white/90  md:text-base"
               >
@@ -94,14 +109,18 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <div className="mx-auto hidden justify-center pb-28 lg:flex lg:flex-row">
-        <Skills />
-        <SliderProject />
+      <div className="mx-auto hidden w-full px-10 justify-between pb-28 xl:flex xl:flex-row">
+        <div className="w-[40%]">
+          <Skills />
+        </div>
+        <div className="w-[60%]">
+          <SliderProject />
+        </div>
       </div>
 
-      <div className="flex flex-col lg:hidden">
+      <div className="flex flex-col xl:hidden">
         <Skills />
-        <SliderProject className="w-[400px]" />
+        <SliderProject />
       </div>
     </>
   );

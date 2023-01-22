@@ -1,8 +1,7 @@
-import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import React, { useRef } from "react";
 import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-import { SiMaildotru } from "react-icons/si";
 
 const Contact = () => {
   const contact_info = [

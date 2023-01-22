@@ -84,74 +84,80 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`absolute top-0 h-screen w-3/4  bg-[#011522]
-          px-7 py-2 font-medium text-[#011522] duration-300 md:hidden ${
-            open ? "right-0" : "right-[-100%]"
-          }`}
+          className={`absolute top-0  h-screen w-full  
+           font-medium text-[#011522] duration-300 md:hidden ${
+             open ? "right-0" : "right-[-100%]"
+           }`}
         >
-          <ul className="flex h-full flex-col justify-center gap-10 py-2 text-lg">
-            <div className="mt-[-150px] flex justify-center">
-              {change ? (
-                <img
-                  src={avatar}
-                  alt=""
-                  className="w-32 rounded-full border border-white/10 brightness-50"
-                  onClick={() => setChange(!change)}
-                />
-              ) : (
-                <img
-                  src={hero}
-                  alt=""
-                  className="w-32 rounded-full border border-white/10 brightness-50"
-                  onClick={() => setChange(!change)}
-                />
-              )}
-            </div>
-            <li
-              onClick={() => setOpen(false)}
-              className=" border-b border-white/10 px-6 text-white/75 hover:text-white/90"
-            >
-              <NavLink to="/" className={activeLink}>
-                <span className="flex items-center gap-3">
-                  <AiOutlineUser />
-                  Home
-                </span>
-              </NavLink>
-            </li>
-            <li
-              onClick={() => setOpen(false)}
-              className="border-b border-white/10 px-6 text-white/75 hover:text-white/90"
-            >
-              <NavLink to="/contact" className={activeLink}>
-                <span className="flex items-center gap-3">
-                  <MdOutlinePhone />
-                  Contact
-                </span>
-              </NavLink>
-            </li>
-            <li
-              onClick={() => setOpen(false)}
-              className=" border-b border-white/10 px-6 text-white/75 hover:text-white/90"
-            >
-              <NavLink to="/portfolio" className={activeLink}>
-                <span className="flex items-center gap-3">
-                  <HiOutlineFolder />
-                  Portfolio
-                </span>
-              </NavLink>
-            </li>
-            <li
-              onClick={() => setOpen(false)}
-              className="border-b border-white/10 px-6 text-white/75 hover:text-white/90"
-            >
-              <NavLink to="/blog" className={activeLink}>
-                <span className="flex items-center gap-3">
-                  <IoReaderOutline />
-                  Blog
-                </span>
-              </NavLink>
-            </li>
-          </ul>
+          <div className="absolute left-[25%] top-0 h-screen w-[75%] bg-[#011522] px-7 py-2">
+            <ul className="flex h-full flex-col justify-center gap-10 py-2 text-lg">
+              <div className="mt-[-150px] flex justify-center">
+                {change ? (
+                  <img
+                    src={avatar}
+                    alt=""
+                    className="w-32 rounded-full border border-white/10 brightness-50"
+                    onClick={() => setChange(!change)}
+                  />
+                ) : (
+                  <img
+                    src={hero}
+                    alt=""
+                    className="w-32 rounded-full border border-white/10 brightness-50"
+                    onClick={() => setChange(!change)}
+                  />
+                )}
+              </div>
+              <li
+                onClick={() => setOpen(false)}
+                className=" border-b border-white/10 px-6 text-white/75 hover:text-white/90"
+              >
+                <NavLink to="/" className={activeLink}>
+                  <span className="flex items-center gap-3">
+                    <AiOutlineUser />
+                    Home
+                  </span>
+                </NavLink>
+              </li>
+              <li
+                onClick={() => setOpen(false)}
+                className="border-b border-white/10 px-6 text-white/75 hover:text-white/90"
+              >
+                <NavLink to="/contact" className={activeLink}>
+                  <span className="flex items-center gap-3">
+                    <MdOutlinePhone />
+                    Contact
+                  </span>
+                </NavLink>
+              </li>
+              <li
+                onClick={() => setOpen(false)}
+                className=" border-b border-white/10 px-6 text-white/75 hover:text-white/90"
+              >
+                <NavLink to="/portfolio" className={activeLink}>
+                  <span className="flex items-center gap-3">
+                    <HiOutlineFolder />
+                    Portfolio
+                  </span>
+                </NavLink>
+              </li>
+              <li
+                onClick={() => setOpen(false)}
+                className="border-b border-white/10 px-6 text-white/75 hover:text-white/90"
+              >
+                <NavLink to="/blog" className={activeLink}>
+                  <span className="flex items-center gap-3">
+                    <IoReaderOutline />
+                    Blog
+                  </span>
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="absolute top-0 left-0  h-screen w-[25%] bg-[#011522]/30"
+            onClick={() => setOpen(false)}
+          />
         </div>
       </div>
     </nav>

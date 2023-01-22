@@ -14,8 +14,8 @@ const SliderProject = () => {
       className="mb-20 py-10 text-white"
       data-aos="zoom-in"
     >
-      <div className="text-center">
-        <h3 className="text-2xl font-semibold md:text-4xl">
+      <div className="text-center mt-8">
+        <h3 className="text-2xl  font-semibold md:text-4xl">
           My{" "}
           <span className="bg-gradient-to-r  from-cyan-500 to-blue-500 bg-clip-text text-transparent">
             Portfolio
@@ -24,13 +24,13 @@ const SliderProject = () => {
         <p className="mt-3 text-lg text-gray-400">My awesome apps</p>
       </div>
       <br />
-      <div className="relative mx-auto flex max-w-6xl items-center gap-6 px-3">
-        <div className="w-full lg:w-4/5">
+      <div className="relative mx-auto flex min-w-[350px] max-w-4xl items-center gap-6 px-5 mt-9">
+        <div className="w-full">
           <Swiper
-            slidesPerview={1.2}
+            slidesPerview={1}
             spaceBetween={20}
             breakpoints={{
-              768: {
+            600: {
                 slidesPerView: 2,
               },
             }}
