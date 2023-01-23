@@ -29,5 +29,11 @@ const data = [
     image: "https://miro.medium.com/max/4800/1*9gX0BSMEBh3YYjTmQR1G3g.webp",
     link: "https://medium.com/@mujahidin28394/how-to-install-and-configure-tailwind-in-react-js-b8bd8779fcd5",
   },
+  {
+    name: "How to customize GitHub readme profile",
+    desc: "Of course, you definitely want your GitHub readme profile to look beautiful and attractive, right? In the following, we will customize our GitHub readme profile.",
+    image: "https://miro.medium.com/max/720/0*6OFUZhvErt9AIKjZ",
+    link: "https://medium.com/@mujahidin28394/how-to-customize-github-readme-profile-ee4f9619897b",
+  },
 ];
 export default data;
