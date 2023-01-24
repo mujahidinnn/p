@@ -1,9 +1,34 @@
 import emailjs from "emailjs-com";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+
+  // Popup timeout
+  const [showPopUp, setShowPopUp] = useState(false);
+  const showPopupHandler = () => setShowPopUp(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopUp(false);
+    }, 1200);
+    return () => clearTimeout(timer);
+  }, [showPopUp]);
+  let popup = null;
+  if (showPopUp) {
+    popup = (
+      <div
+        className="fixed inset-0 top-16 z-50 mt-10 flex justify-center bg-black/20"
+        onClick={() => setShowPopUp(false)}
+      >
+        <div className="box-border flex h-[100px] w-[300px] items-center justify-center rounded border-t-[6px] border-cyan-400 bg-white px-[6px]">
+          <p className="text-xl text-black">The message has been sent!</p>
+        </div>
+      </div>
+    );
+  }
+
   const contact_info = [
     {
       logo: <FiMail />,
@@ -25,6 +50,7 @@ const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
     emailjs
       .sendForm(
         "service_ewyatnw",
@@ -35,17 +61,20 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Pesan telah dikirim");
+          e.target.reset();
+          setLoading(false);
+          showPopupHandler();
         },
         (error) => {
           console.log(error.text);
+          setLoading(false);
         }
       );
-    e.target.reset();
   };
 
   return (
     <section id="contact" className="min-h-screen py-10 text-white">
+      {popup}
       <div className="mt-8 text-center">
         <h3 className="mt-4 text-xl font-semibold md:text-5xl">
           Contact{" "}
@@ -86,12 +115,26 @@ const Contact = () => {
               name="message"
               required
             ></textarea>
-            <button
-              type="submit"
-              className="rounded-xl py-2 px-3 w-fit bg-gradient-to-r from-cyan-500 to-blue-500"
-            >
-              Send Message
-            </button>
+
+            {loading ? (
+              <button
+                type="submit"
+                className="flex w-fit rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-3"
+              >
+                <svg
+                  className="mr-2 h-5 w-5 animate-spin rounded-full border-b-2 border-r-2 border-white"
+                  viewBox="0 0 24 24"
+                ></svg>
+                Sending . . .
+              </button>
+            ) : (
+              <button
+                type="submit"
+                className="w-fit rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-3"
+              >
+                Send Message
+              </button>
+            )}
           </form>
           <div className="flex flex-col  gap-7 ">
             {contact_info.map((contact, i) => (
