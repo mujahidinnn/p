@@ -35,5 +35,11 @@ const data = [
     image: "https://miro.medium.com/max/720/0*6OFUZhvErt9AIKjZ",
     link: "https://medium.com/@mujahidin28394/how-to-customize-github-readme-profile-ee4f9619897b",
   },
+  {
+    name: "Create Popup with Timer in React JS",
+    desc: "To see how the setTimeout works The setTimeout is a method that built-in Javascript to fire a function after a period of time. Here, this code block will print “Hello World!” to the co",
+    image: "https://miro.medium.com/max/720/0*XeKvcST_4m5iUzyl",
+    link: "https://medium.com/@mujahidin28394/create-popup-with-timer-in-react-js-4ccc19bedc2a",
+  },
 ];
 export default data;
