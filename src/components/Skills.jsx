@@ -25,8 +25,11 @@ const Skills = () => {
               <div
                 className={`flex h-1 w-1 flex-col items-center justify-center rounded-full bg-gray-900 text-9xl ${skill.color}`}
               >
-                <p className="text-4xl md:text-5xl">{skill.logo}</p>
-                <p className="text-xs mt-1">{skill.name}</p>
+                <div className="text-4xl md:text-5xl">{skill.logo}</div>
+                <p className="text-xs">
+                  <img src={skill?.logo_figma} alt="" className="mb-[5px]"/>
+                  {skill.name}
+                </p>
               </div>
             </div>
           ))}

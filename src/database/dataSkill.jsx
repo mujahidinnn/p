@@ -1,3 +1,4 @@
+import Figma from "../assets/images/figma.svg";
 import { FaBootstrap, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoReact, IoLogoSass } from "react-icons/io5";
@@ -5,6 +6,7 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiMaterialui,
+  SiFigma,
   SiPhp,
 } from "react-icons/si";
 
@@ -56,6 +58,12 @@ const Data = [
     logo: <SiMaterialui />,
     border: "border-blue-700",
     color: "text-blue-700",
+  },
+  {
+    name: "Figma",
+    logo_figma: Figma,
+    border: "border-white-400",
+    color: "text-white-500",
   },
   {
     name: "PHP",
