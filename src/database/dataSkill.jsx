@@ -6,7 +6,6 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiMaterialui,
-  SiFigma,
   SiPhp,
 } from "react-icons/si";
 
@@ -65,12 +64,12 @@ const Data = [
     border: "border-white-400",
     color: "text-white-500",
   },
-  {
-    name: "PHP",
-    logo: <SiPhp />,
-    border: "border-blue-600",
-    color: "text-blue-600",
-  },
+  // {
+    // name: "PHP",
+    // logo: <SiPhp />,
+    // border: "border-blue-600",
+    // color: "text-blue-600",
+  // },
 ];
 
 export default Data;

@@ -71,20 +71,15 @@ const Hero = () => {
               <p className="mx-auto w-11/12 text-justify text-sm leading-5 md:mx-0 md:text-lg md:leading-7">
                 <p>
                   My name is{" "}
-                  <span className="text-md font-bold text-blue-400">
-                    Mujahidin
-                  </span>
-                  , you can call me whatever you like.
+                  <span className="text-md font-bold">Mujahidin</span>, you can
+                  call me whatever you like.
                 </p>
-                <p className="flex items-center gap-2">
+                <p>
                   I'm a{" "}
-                  <a
-                    href="https://github.com/DenverCoder1/readme-typing-svg"
-                    className="mt-1 cursor-text"
-                  >
-                    <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&color=cyan&size=16&center=false&vCenter=true&width=300&height=20&lines=Frontend+Web+Developer,;Web+Designer,;UI+/+UX+Designer,;" />
-                  </a>
-                  <span className="-ml-24">and familiar with react JS.</span>
+                  <span className="text-md font-bold">
+                    frontend web developer
+                  </span>
+                  &nbsp;and familiar with react JS.
                 </p>
               </p>
             </div>
@@ -114,7 +109,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <div className="mx-auto hidden w-full justify-between px-10 pb-28 xl:flex xl:flex-row">
+      <div className="mx-auto hidden w-full px-10 justify-between pb-28 xl:flex xl:flex-row">
         <div className="w-[40%]">
           <Skills />
         </div>

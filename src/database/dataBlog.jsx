@@ -41,5 +41,12 @@ const data = [
     image: "https://miro.medium.com/max/720/0*XeKvcST_4m5iUzyl",
     link: "https://medium.com/@mujahidin28394/create-popup-with-timer-in-react-js-4ccc19bedc2a",
   },
+  {
+    name: "How to make Popup Detail Data in React JS?",
+    desc: "Maybe in some cases in your react project, there might be some features that want to display some data so it doesn’t look complicated, but we want the user to be able to see the details of that data.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:720/format:webp/1*wdRrEaLY3-kfYPL_NX19Kg.png",
+    link: "https://medium.com/@mujahidin28394/how-to-make-popup-detail-data-in-react-js-710a298ff7c2",
+  },
 ];
 export default data;
