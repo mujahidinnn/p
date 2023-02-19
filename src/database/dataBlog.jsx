@@ -48,5 +48,12 @@ const data = [
       "https://miro.medium.com/v2/resize:fit:720/format:webp/1*wdRrEaLY3-kfYPL_NX19Kg.png",
     link: "https://medium.com/@mujahidin28394/how-to-make-popup-detail-data-in-react-js-710a298ff7c2",
   },
+  {
+    nmae: "How to make Image Preview with React Js?",
+    desc: "Hi everyone, meet me again, on this blog I want to share how to create an image preview with react js. maybe some of my friends are still confused about customizing a beautiful preview image. Okay, don’t take too long, let’s go straight to the tutorial.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:720/format:webp/1*GIIh2TKAFiixk2R65N38rw.png",
+    link: "https://medium.com/@mujahidin28394/how-to-make-image-preview-with-react-js-55867a4c425f",
+  },
 ];
 export default data;
