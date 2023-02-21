@@ -1,4 +1,5 @@
 import Figma from "../assets/images/figma.svg";
+import Canva from "../assets/images/Canva.png";
 import { FaBootstrap, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoReact, IoLogoSass } from "react-icons/io5";
@@ -59,16 +60,22 @@ const Data = [
     color: "text-blue-700",
   },
   {
+    name: "Canva",
+    logo_other: Canva,
+    border: "border-gray-300",
+    color: "text-gray-300",
+  },
+  {
     name: "Figma",
-    logo_figma: Figma,
-    border: "border-white-400",
-    color: "text-white-500",
+    logo_other: Figma,
+    border: "border-gray-300",
+    color: "text-gray-300",
   },
   // {
-    // name: "PHP",
-    // logo: <SiPhp />,
-    // border: "border-blue-600",
-    // color: "text-blue-600",
+  // name: "PHP",
+  // logo: <SiPhp />,
+  // border: "border-blue-600",
+  // color: "text-blue-600",
   // },
 ];
 

@@ -27,7 +27,7 @@ const Skills = () => {
               >
                 <div className="text-4xl md:text-5xl">{skill.logo}</div>
                 <p className="text-xs">
-                  <img src={skill?.logo_figma} alt="" className="mb-[5px]"/>
+                  <img src={skill?.logo_other} alt="" className="mb-[5px]"/>
                   {skill.name}
                 </p>
               </div>
