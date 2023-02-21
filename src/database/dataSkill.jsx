@@ -62,7 +62,7 @@ const Data = [
   {
     name: "Canva",
     logo_other: Canva,
-    border: "border-gray-300",
+    border: "border-cyan-600",
     color: "text-gray-300",
   },
   {
